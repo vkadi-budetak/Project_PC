@@ -222,8 +222,36 @@ input {
     width: 100%;
 }
 
-.course__progress-element {
+
+
+.course__progress-element progress {
     width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Прибираємо стандартні стилі */
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Фон прогрес-бару (незаповнена частина) */
+.course__progress-element progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+/* Заповнена частина прогрес-бару */
+.course__progress-element progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+    /* Плавна анімація */
+}
+
+/* Для Firefox */
+.course__progress-element progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    border-radius: 10px;
 }
 
 .course__progress-minmax {
