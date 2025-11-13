@@ -234,21 +234,20 @@ input {
     appearance: none;
 }
 
-/* Фон прогрес-бару (незаповнена частина) */
+/* Фон прогресс-бару (незаполнена часть) */
 .course__progress-element progress::-webkit-progress-bar {
     background-color: #e0e0e0;
     border-radius: 10px;
 }
 
-/* Заповнена частина прогрес-бару */
+/* Заполнена часть прогресс-бару */
 .course__progress-element progress::-webkit-progress-value {
     background: linear-gradient(90deg, #4caf50, #81c784);
     border-radius: 10px;
     transition: width 0.3s ease;
-    /* Плавна анімація */
+    /* Плавная анімация */
 }
 
-/* Для Firefox */
 .course__progress-element progress::-moz-progress-bar {
     background: linear-gradient(90deg, #4caf50, #81c784);
     border-radius: 10px;
